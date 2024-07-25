@@ -1,54 +1,129 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LinguaAid</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>Welcome to LinguaAid</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="about">
-            <h2>About LinguaAid</h2>
-            <p>LinguaAid is your ultimate language learning assistant, designed to help you master new languages with ease and confidence.</p>
-        </section>
-        <section id="features">
-            <h2>Features</h2>
-            <ul>
-                <li>Interactive Lessons</li>
-                <li>Real-Time Feedback</li>
-                <li>Progress Tracking</li>
-                <li>Community Support</li>
-            </ul>
-        </section>
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <form action="submit_form.php" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-                
-                <button type="submit">Send</button>
-            </form>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 LinguaAid. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+---
+layout: default
+--- 
+	
+	
+	<!------- Header Banner ------->
+		<!-- Navigation -->
+		<header class="grid text-center tall-100 md-tall-80">
+			{% include header-nav.html %}
+
+			<!-- Hero section -->
+			<div class="col-12">
+				<h3 class="font-weight-extra-bold editable">
+					<span class="featured-text">Sleep </span> Like a Baby
+				</h3>
+				<h1 class="font-weight-light editable">
+					The Ultimate Mattress Solution
+				</h1>
+			</div>
+		</header>
+
+		<!-------- Gallery/ About Section -------->
+		<section class="grid xs-padded-05">
+			<div class="padded col-6-_xs-12-middle">
+				<h2>Built to last a <span class="featured-text">lifetime</span></h2>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore
+					ratione sequi quod tenetur quam ipsa molestias enim deleniti, nostrum
+					nemo earum non illo? Repudiandae tenetur harum est modi, deleniti quo!
+				</p>
+			</div>
+			<div class="bg-bed col-6_xs-12 tall-70">
+				<!-- Background image bed -->
+			</div>
+			<div class="bg-pug col-6_xs-12 tall-70 hide-xs">
+				<!-- Background image pug -->
+			</div>
+			<div class="padded col-6-_xs-12-middle">
+				<h2>So <span class="featured-text">soft </span>you'll melt</h2>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore
+					ratione sequi quod tenetur quam ipsa molestias enim deleniti, nostrum
+					nemo earum non illo? Repudiandae tenetur harum est modi, deleniti quo!
+				</p>
+			</div>
+		</section>
+
+		<!-------- Feature icon grid -------->
+		<section class="padded grid bg-dark">
+			<div class="padded-sm col-12">
+				<h2 class="text-center">
+					<span class="featured-text">Features </span>you will love
+				</h2>
+			</div>
+			<div class="padded-sm col-3_sm-6">
+				<i class="fas fa-cloud"></i>
+				<p class="sm-text-center">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					<span class="feature-overflow hide-xs">
+						Officia aliquam sit accusantium autem voluptatibus, et esse fugit
+						consectetur qui maxime?
+					</span>
+				</p>
+			</div>
+			<div class="padded-sm col-3_sm-6">
+				<i class="fas fa-cloud"></i>
+				<p class="sm-text-center">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					<span class="feature-overflow hide-xs"
+						>Vero odit, ipsam ducimus dicta quisquam inventore, delectus
+						voluptatem quod provident
+					</span>
+				</p>
+			</div>
+			<div class="padded-sm col-3_sm-6">
+				<i class="fas fa-cloud"></i>
+				<p class="sm-text-center">
+					Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+					<span class="feature-overflow hide-xs"
+						>Est adipisci, dolore ea sit eligendi modi, magnam eveniet ab
+						dolorum libero
+					</span>
+				</p>
+			</div>
+			<div class="padded-sm col-3_sm-6">
+				<i class="fas fa-cloud"></i>
+				<p class="sm-text-center">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					<span class="feature-overflow hide-xs"
+						>Voluptates totam, error accusamus nobis dignissimos, aperiam
+						perferendis beatae sit
+					</span>
+				</p>
+			</div>
+		</section>
+
+		<!--------- Image banner --------->
+
+		<section class="padded text-center bg-yellow tall-70 grid">
+			<div class="col-12-middle">
+				<div class="banner-container">
+					<h3 class="big-text">
+						<span class="font-weight-normal small-text big-text-span"
+							>never underestimate the power of </span
+						><br />
+						a good night <span class="featured-text"> sleep </span>
+					</h3>
+				</div>
+			</div>
+		</section>
+
+		<!---------- Testimonials section ---------->
+		<section class="padded-lg grid">
+			<div class="col-1 text-right">
+				<span class="quote-icon quote-left">&ldquo;</span>
+			</div>
+			<div class="col-10 text-center">
+				<p class="medium-text font-weight-light testimonial">
+					I've never experienced sleep like this. Omg I really love this
+					mattress. I want to buy one for every member of my family.
+				</p>
+				<p class="subtitle">- A very happy customer</p>
+			</div>
+			<div class="col-1">
+				<span class="quote-icon quote-right">&rdquo;</span>
+			</div>
+		</section>
+
+	
